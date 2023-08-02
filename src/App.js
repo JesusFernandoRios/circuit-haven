@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Paper from "@mui/material/Paper";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Paper sx={appBackground} variant="outlined">
+      <p>Welcome to circuit haven</p>
+    </Paper>
   );
 }
+
+const appBackground = {
+  width: "95%",
+  minHeight: "95vh",
+  margin: "auto",
+};
 
 export default App;
